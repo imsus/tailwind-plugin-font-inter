@@ -19,7 +19,7 @@
     "url": "https://github.com/imsus/tailwind-plugin-font-inter/issues"
   },
   "homepage": "https://tailwind-plugin-font-inter.netlify.com",
-  "version": "1.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "src/index.js",
   "devDependencies": {
@@ -33,6 +33,7 @@
   },
   "scripts": {
     "dev": "parcel test/index.html --no-autoinstall",
-    "build": "parcel build test/index.html"
+    "build": "parcel build test/index.html",
+    "test": "echo Success"
   }
 }
