@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-plugin-font-inter",
+  "name": "@imsus/tailwind-plugin-font-inter",
   "description": "TailwindCSS Plugin to integrate with Inter UI Typeface.",
   "author": {
     "name": "Imam Susanto",
@@ -19,7 +19,7 @@
     "url": "https://github.com/imsus/tailwind-plugin-font-inter/issues"
   },
   "homepage": "https://tailwind-plugin-font-inter.netlify.com",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "src/index.js",
   "devDependencies": {
