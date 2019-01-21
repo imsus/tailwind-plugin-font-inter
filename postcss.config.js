@@ -6,21 +6,7 @@ class TailwindExtractor {
 
 module.exports = {
   plugins: [
-    require('postcss-import'),
-    require('tailwindcss')('./tailwind.config.js'),
-    require('autoprefixer'),
-    process.env.NODE_ENV === 'production'
-      ? require('postcss-purgecss')({
-          content: ['./test/index.html'],
-          extractors: [
-            {
-              extractor: TailwindExtractor,
-              extensions: ['html', 'js', 'vue']
-            }
-          ]
-        })
-      : function() {
-          return [];
-        }
+    require('tailwindcss')('./tailwind.js'),
+    require('autoprefixer')
   ]
 };

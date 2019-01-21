@@ -8,8 +8,6 @@
  *
  */
 
-const map = require('lodash.map');
-
 // -----------------------------------------------------------------------------
 // Dynamic Metrics Class
 // -----------------------------------------------------------------------------
@@ -35,8 +33,6 @@ class DynamicMetrics {
 const dm = new DynamicMetrics();
 
 // -----------------------------------------------------------------------------
-
-// -----------------------------------------------------------------------------
 // Fontface
 // Fontface declaration with additional `font-display: swap`
 //
@@ -51,7 +47,7 @@ const interUI = {
       fontWeight: 400,
       fontDisplay: 'swap',
       src:
-        'url("https://rsms.me/inter/font-files/Inter-UI-Regular.woff2?v=3.1") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-Regular.woff?v=3.1") format("woff")'
+        'url("https://rsms.me/inter/font-files/Inter-UI-Regular.woff2?v=3.2") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-Regular.woff?v=3.2") format("woff")'
     },
     {
       fontFamily: 'Inter UI',
@@ -59,7 +55,7 @@ const interUI = {
       fontWeight: 400,
       fontDisplay: 'swap',
       src:
-        'url("https://rsms.me/inter/font-files/Inter-UI-Italic.woff2?v=3.1") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-Italic.woff?v=3.1") format("woff")'
+        'url("https://rsms.me/inter/font-files/Inter-UI-Italic.woff2?v=3.2") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-Italic.woff?v=3.2") format("woff")'
     },
     {
       fontFamily: 'Inter UI',
@@ -67,7 +63,7 @@ const interUI = {
       fontWeight: 500,
       fontDisplay: 'swap',
       src:
-        'url("https://rsms.me/inter/font-files/Inter-UI-Medium.woff2?v=3.1") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-Medium.woff?v=3.1") format("woff")'
+        'url("https://rsms.me/inter/font-files/Inter-UI-Medium.woff2?v=3.2") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-Medium.woff?v=3.2") format("woff")'
     },
     {
       fontFamily: 'Inter UI',
@@ -75,7 +71,7 @@ const interUI = {
       fontWeight: 500,
       fontDisplay: 'swap',
       src:
-        'url("https://rsms.me/inter/font-files/Inter-UI-MediumItalic.woff2?v=3.1") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-MediumItalic.woff?v=3.1") format("woff")'
+        'url("https://rsms.me/inter/font-files/Inter-UI-MediumItalic.woff2?v=3.2") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-MediumItalic.woff?v=3.2") format("woff")'
     },
     {
       fontFamily: 'Inter UI',
@@ -83,7 +79,7 @@ const interUI = {
       fontWeight: 600,
       fontDisplay: 'swap',
       src:
-        'url("https://rsms.me/inter/font-files/Inter-UI-SemiBold.woff2?v=3.1") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-SemiBold.woff?v=3.1") format("woff")'
+        'url("https://rsms.me/inter/font-files/Inter-UI-SemiBold.woff2?v=3.2") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-SemiBold.woff?v=3.2") format("woff")'
     },
     {
       fontFamily: 'Inter UI',
@@ -91,7 +87,7 @@ const interUI = {
       fontWeight: 600,
       fontDisplay: 'swap',
       src:
-        'url("https://rsms.me/inter/font-files/Inter-UI-SemiBoldItalic.woff2?v=3.1") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-SemiBoldItalic.woff?v=3.1") format("woff")'
+        'url("https://rsms.me/inter/font-files/Inter-UI-SemiBoldItalic.woff2?v=3.2") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-SemiBoldItalic.woff?v=3.2") format("woff")'
     },
     {
       fontFamily: 'Inter UI',
@@ -99,7 +95,7 @@ const interUI = {
       fontWeight: 700,
       fontDisplay: 'swap',
       src:
-        'url("https://rsms.me/inter/font-files/Inter-UI-Bold.woff2?v=3.1") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-Bold.woff?v=3.1") format("woff")'
+        'url("https://rsms.me/inter/font-files/Inter-UI-Bold.woff2?v=3.2") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-Bold.woff?v=3.2") format("woff")'
     },
     {
       fontFamily: 'Inter UI',
@@ -107,7 +103,7 @@ const interUI = {
       fontWeight: 700,
       fontDisplay: 'swap',
       src:
-        'url("https://rsms.me/inter/font-files/Inter-UI-BoldItalic.woff2?v=3.1") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-BoldItalic.woff?v=3.1") format("woff")'
+        'url("https://rsms.me/inter/font-files/Inter-UI-BoldItalic.woff2?v=3.2") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-BoldItalic.woff?v=3.2") format("woff")'
     },
     {
       fontFamily: 'Inter UI',
@@ -115,7 +111,7 @@ const interUI = {
       fontWeight: 800,
       fontDisplay: 'swap',
       src:
-        'url("https://rsms.me/inter/font-files/Inter-UI-ExtraBold.woff2?v=3.1") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-ExtraBold.woff?v=3.1") format("woff")'
+        'url("https://rsms.me/inter/font-files/Inter-UI-ExtraBold.woff2?v=3.2") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-ExtraBold.woff?v=3.2") format("woff")'
     },
     {
       fontFamily: 'Inter UI',
@@ -123,7 +119,7 @@ const interUI = {
       fontWeight: 800,
       fontDisplay: 'swap',
       src:
-        'url("https://rsms.me/inter/font-files/Inter-UI-ExtraBoldItalic.woff2?v=3.1") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-ExtraBoldItalic.woff?v=3.1") format("woff")'
+        'url("https://rsms.me/inter/font-files/Inter-UI-ExtraBoldItalic.woff2?v=3.2") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-ExtraBoldItalic.woff?v=3.2") format("woff")'
     },
     {
       fontFamily: 'Inter UI',
@@ -131,7 +127,7 @@ const interUI = {
       fontWeight: 900,
       fontDisplay: 'swap',
       src:
-        'url("https://rsms.me/inter/font-files/Inter-UI-Black.woff2?v=3.1") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-Black.woff?v=3.1") format("woff")'
+        'url("https://rsms.me/inter/font-files/Inter-UI-Black.woff2?v=3.2") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-Black.woff?v=3.2") format("woff")'
     },
     {
       fontFamily: 'Inter UI',
@@ -139,7 +135,7 @@ const interUI = {
       fontWeight: 900,
       fontDisplay: 'swap',
       src:
-        'url("https://rsms.me/inter/font-files/Inter-UI-BlackItalic.woff2?v=3.1") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-BlackItalic.woff?v=3.1") format("woff")'
+        'url("https://rsms.me/inter/font-files/Inter-UI-BlackItalic.woff2?v=3.2") format("woff2"), url("https://rsms.me/inter/font-files/Inter-UI-BlackItalic.woff?v=3.2") format("woff")'
     }
   ]
 };
@@ -151,8 +147,8 @@ const interUIVar = {
       fontStyle: 'oblique 0deg 10deg',
       fontWeight: '400 900',
       fontDisplay: 'swap',
-      src: `url("https://rsms.me/inter/font-files/Inter-UI.var.woff2?v=3.1") format("woff2-variations"),
-      url("https://rsms.me/inter/font-files/Inter-UI.var.woff2?v=3.1") format("woff2")`
+      src: `url("https://rsms.me/inter/font-files/Inter-UI.var.woff2?v=3.2") format("woff2-variations"),
+      url("https://rsms.me/inter/font-files/Inter-UI.var.woff2?v=3.2") format("woff2")`
     }
   ]
 };
@@ -177,26 +173,20 @@ const fontDeclaration = {
 // -----------------------------------------------------------------------------
 
 module.exports = function(textSizes) {
-  return function ({ addComponents, addUtilities, config }) {
-    const newTextSizes = map(textSizes, function (value, key) {
-      valueToRem = parseFloat(value.slice(0, -3));
+  return function({ addComponents, addUtilities, config }) {
+    const newTextSizes = Object.entries(textSizes).map(function(value) {
+      valueToRem = parseFloat(value[1].slice(0, -3));
       return {
-        [`.text-inter-${key}`]: {
-          fontSize: value,
+        [`.text-inter-${value[0]}`]: {
+          fontSize: `${valueToRem}rem`,
           letterSpacing: `${dm.tracking(valueToRem)}rem`,
           lineHeight: `${dm.leading(valueToRem)}rem`
         }
       };
     });
 
-    addUtilities([
-      newTextSizes
-    ]);
+    addUtilities([newTextSizes]);
 
-    addComponents([
-      interUI,
-      interUIVar,
-      fontDeclaration
-    ]);
-  }
+    addComponents([interUI, interUIVar, fontDeclaration]);
+  };
 };
