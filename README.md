@@ -17,7 +17,8 @@
 ## ✅ Usage
 
 1. Go to your TailwindCSS Configuration usually named `tailwind.js`
-2. Go to `plugins` keyword. Then add `require('tailwind-plugin-font-inter')(defaultConfig.textSizes)` inside the array.
+2. In your `tailwind.js` file, uncomment the line with this code `let defaultConfig = require('tailwindcss/defaultConfig')();`
+3. Go to `plugins` keyword. Then add `require('@imsus/tailwind-plugin-font-inter')(defaultConfig.textSizes)` inside the array.
 
 ## 🖥 Output
 
