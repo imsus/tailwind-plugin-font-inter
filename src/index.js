@@ -176,10 +176,12 @@ module.exports = function(textSizes) {
   return function({ addComponents, addUtilities, config }) {
     const newTextSizes = Object.entries(textSizes).map(function(value) {
       valueToRem = parseFloat(value[1].slice(0, -3));
+      valueToPx = valueToRem * 16;
+
       return {
         [`.text-inter-${value[0]}`]: {
           fontSize: `${valueToRem}rem`,
-          letterSpacing: `${dm.tracking(valueToRem)}rem`,
+          letterSpacing: `${dm.tracking(valueToPx)}em`,
           lineHeight: `${dm.leading(valueToRem)}rem`
         }
       };
